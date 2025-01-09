@@ -1,0 +1,11 @@
+.aside {
+  width: 10vw;
+  max-width: 250px;
+  height: 100%;
+  padding: 0 20px;
+
+  .asideNav {
+    display: flex;
+    flex-direction: column;
+  }
+}
