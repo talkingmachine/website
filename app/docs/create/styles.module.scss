@@ -1,0 +1,48 @@
+.create {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  height: calc(100vh - var(--headerHeight));
+
+  .createSection {
+    padding: 20px;
+    flex: 1;
+
+    h3, h1 {
+      margin: 0;
+    }
+    .topRow {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      gap: 10px;
+      height: 32px;
+      input {
+        font-size: large;
+        font-weight: 700;
+        padding: 5px 10px;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+      }
+      button.saveButton {
+        height: 32px;
+      }
+    }
+    .textArea {
+      width: 100%;
+      height: calc(100% - 50px);
+      padding: 20px;
+      font-size: large;
+      box-sizing: border-box;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      font-size: 16px;
+      font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+    }
+    .markdownArea {
+      overflow-y: auto;
+      height: calc(100% - 40px);
+    }
+  }
+}

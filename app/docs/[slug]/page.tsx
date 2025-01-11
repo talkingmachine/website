@@ -1,3 +1,4 @@
+import { SyntaxHighlightedCode } from "@/lib/highlight";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import path from "path";
@@ -10,6 +11,7 @@ export default async function Page({ params }: IPageParams) {
   const slug = (await params).slug;
   const filePath = path.join(process.cwd(), "/content", `${slug}.md`);
   const content = fs.readFileSync(filePath, "utf8");
+
   return (
     <Markdown
       options={{
